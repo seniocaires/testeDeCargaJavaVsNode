@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  nodeserver:
+    build:
+      context: ./node-server
+    ports:
+      - 3000:3000
+
+  javaserver:
+    build:
+      context: ./java-server
+    ports:
+      - 8080:8080
+
+  javasparkserver:
+    build:
+      context: ./javaspark-server
+    ports:
+      - 4567:4567

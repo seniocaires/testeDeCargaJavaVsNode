@@ -2,3 +2,8 @@
 /java-server/.settings/
 /java-server/.classpath
 /java-server/.project
+
+/javaspark-server/target/
+/javaspark-server/.settings/
+/javaspark-server/.classpath
+/javaspark-server/.project

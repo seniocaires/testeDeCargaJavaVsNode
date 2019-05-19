@@ -3,7 +3,7 @@ package com.github.seniocaires.javaserver;
 import static spark.Spark.init;
 import static spark.Spark.get;
 
-public class ServerSpark {
+public class SparkServer {
 
 	public static void main(String[] args) {
 		

@@ -3,15 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.seniocaires</groupId>
-	<artifactId>java-server</artifactId>
+	<artifactId>javaspark-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description></description>
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.sun.net.httpserver/http -->
+		<!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
 		<dependency>
-			<groupId>com.sun.net.httpserver</groupId>
-			<artifactId>http</artifactId>
-			<version>20070405</version>
+			<groupId>com.sparkjava</groupId>
+			<artifactId>spark-core</artifactId>
+			<version>2.9.0</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -21,11 +21,11 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-					<finalName>server</finalName>
+					<finalName>sparkserver</finalName>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.github.seniocaires.javaserver.Server</mainClass>
+							<mainClass>com.github.seniocaires.javaserver.SparkServer</mainClass>
 							<classpathPrefix>dependency-jars/</classpathPrefix>
 						</manifest>
 					</archive>
@@ -50,13 +50,13 @@
 						</goals>
 						<phase>package</phase>
 						<configuration>
-							<finalName>server</finalName>
+							<finalName>sparkserver</finalName>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
 							<archive>
 								<manifest>
-									<mainClass>com.github.seniocaires.javaserver.Server</mainClass>
+									<mainClass>com.github.seniocaires.javaserver.SparkServer</mainClass>
 								</manifest>
 							</archive>
 						</configuration>
